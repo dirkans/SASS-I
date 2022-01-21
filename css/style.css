@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* Diseño de sitio web por Pablo Ambrosio - http://www.dirkans.com */
+/* https://github.com/dirkans */
+.nav-item {
+  background-color: lightsteelblue;
+  border-radius: 20px;
+  margin: 3px;
+  text-align: center;
+  transition: background-color .5s; }
+  .nav-item:hover {
+    background-color: lightsalmon; }
+
+h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+  animation-duration: 3s;
+  animation-name: h1-ani;
+  animation-iteration-count: infinite; }
+
+@keyframes h1-ani {
+  0% {
+    color: black; }
+  50% {
+    color: lightsteelblue; }
+  100% {
+    color: black; } }
+
+.footer {
+  /* Acomodar links del footer */
+  /* Ajustando tamaño de fuente del footer */ }
+  .footer .flag-ul {
+    padding: 10px; }
+  .footer-container {
+    background-color: lightsteelblue; }
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px; }
+  .footer-social {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+    margin: 0; }
+  .footer-text {
+    font-size: 12px; }
+  .footer-links-ul {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+
+/* Ocultando mensaje de error para pantallas chicas */
+.div-div2 {
+  display: none; }
+
+@media (max-width: 826px) {
+  .flag-ul {
+    display: none; }
+  .footer-social {
+    display: none; } }
+
+/* Mediaqueries para <300px. Oculta el div que contiene todo el
+body llamado div-div, y muestra div-div2 que es un mensaje de error */
+@media (max-width: 300px) {
+  .div-div {
+    display: none; }
+  .div-div2 {
+    display: flex;
+    font-size: 25px;
+    color: tomato;
+    text-align: center; } }
+
+/* Suavizando bordes de tarjetas con texto */
+.card {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; }
+
+li {
+  list-style-type: none; }
+  li ul {
+    padding: 10px;
+    margin: 0; }
+
+body {
+  background-color: #e6e6e6; }
+  body a {
+    color: black;
+    text-decoration: none;
+    transition: color .5s; }
+    body a:hover {
+      color: sandybrown; }

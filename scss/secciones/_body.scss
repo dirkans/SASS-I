@@ -1,0 +1,15 @@
+body {
+    background-color: $body-back;
+
+    a {
+        color: $link-stdby;
+        text-decoration: none;
+        transition: color .5s;
+
+        &:hover {
+            color: $hovers;
+        }
+    }
+}
+
+

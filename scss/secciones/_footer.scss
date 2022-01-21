@@ -1,0 +1,36 @@
+.footer {
+    .flag-ul {
+        padding: 10px;
+    }
+          
+    &-container {
+        background-color: $footer-container;
+    }
+    /* Acomodar links del footer */
+    &-links {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+    
+    &-social {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        padding: 0;
+        margin: 0;
+    }
+    
+    /* Ajustando tamaño de fuente del footer */
+    &-text {
+        font-size: 12px;
+    }
+    &-links-ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
